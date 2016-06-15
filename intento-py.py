@@ -24,4 +24,12 @@ if lista[0] >= lista[0:]:
 		return lista[0]
 	else:
 		lista[0] < lista[1:]
-		return maximo(lista[0]+1)		
+		return maximo(lista[0]+1)	
+
+
+
+	if lista[0:] > lista[1:]:
+		return lista[0]
+	else:
+		lista[0] <= lista[1]
+		return maximo(lista[1:])			
