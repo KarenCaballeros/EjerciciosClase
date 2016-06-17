@@ -1,10 +1,7 @@
 def fibonacci(num):
-	lista= []
 	if num == 0 or num == 1:
-		return num 
-	lista= [1]
+		return num 	
 	else:
-		lista.append(lista[0] + lista[0])
-		lista.append(num + 1)
-		print(lista)
-		return fibonacci(num)
+		num2= num -1
+		num3= num -2
+		return fibonacci(num2) + fibonacci(num3) 
